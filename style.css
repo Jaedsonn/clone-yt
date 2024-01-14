@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+body nav {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+body nav #YouTube {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+body nav #search {
+  width: 404px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body nav #search input {
+  width: 348px;
+  height: 42px;
+  border: solid 1px #CCCCCC;
+  outline: none;
+}
+body nav #search #lupa-alinha {
+  width: 57px;
+  height: 42px;
+  background-color: #CCCCCC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body nav #bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+body main {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  gap: 48px;
+}
+body main #video {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+body main #video #video-img {
+  width: 952px;
+  height: 537px;
+}
+body main #video #video-title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+body main #video #video-statics {
+  display: flex;
+  gap: 42px;
+}
+body main #video #video-statics #canal {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+body main #video #video-statics #canal #iconTitle {
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+body main #video #video-statics #canal #iconTitle #canal-inscritos {
+  color: #515151;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+body main #video #video-statics button {
+  width: 159px;
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+  background-color: #CC0000;
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
+}
+body main #video #video-statics .static-btns {
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  gap: 8px;
+}
+body main #video #estatisticas-video {
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+body main #video #video-descricao {
+  color: #515151;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 510px;
+}
+body main #video-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+body main #video-bar .recomendacoes {
+  display: flex;
+  gap: 16px;
+}
+body main #video-bar .recomendacoes p {
+  display: flex;
+  flex-direction: column;
+  width: 196px;
+  gap: 8px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+body main #video-bar .recomendacoes p span {
+  color: #515151;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}/*# sourceMappingURL=style.css.map */

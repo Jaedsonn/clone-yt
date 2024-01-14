@@ -1,0 +1,151 @@
+@use 'src/main';
+
+* {
+    box-sizing: border-box;
+    @include main.fontFamily($fontFamily: font)
+}
+
+
+body {
+    height: 100vh;
+   
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+
+    nav {
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px;
+
+        #YouTube {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        #search {
+            width: 404px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            input {
+                width: 348px;
+                height: 42px;
+                border: solid 1px main.$search-color;
+                outline: none;
+            }
+
+            #lupa-alinha {
+                width: 57px;
+                height: 42px;
+                background-color: main.$search-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        #bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+        }
+
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+        gap: 48px;
+
+        #video {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            #video-img {
+                width: 952px;
+                height: 537px;
+            }
+
+            #video-title {
+                @include main.titleVideo($titleVideo: font);
+            }
+
+            #video-statics {
+                display: flex;
+                gap: 42px;
+
+                #canal {
+                    width: 180px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 12px;
+
+                    #iconTitle {
+                        @include main.iconAndTitles($iconAndTitle: font);
+
+                        #canal-inscritos {
+                            @include main.description($description: font);
+                        }
+                    }
+                }
+
+                button {
+                    width: 159px;
+                    height: 40px;
+                    border: none;
+                    border-radius: 2px;
+                    background-color: main.$btn-background;
+                    @include main.iconAndTitles($iconAndTitle: font);
+                    color: main.$btn-color;
+
+                }
+
+                .static-btns {
+                    display: flex;
+                    align-items: center;
+                    @include main.iconAndTitles;
+                    gap: 8px;
+                }
+            }
+
+            #estatisticas-video {
+                @include main.iconAndTitles
+            }
+
+            #video-descricao {
+                @include main.description;
+                width: 510px;
+            }
+            
+        }
+        #video-bar{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            .recomendacoes{
+                display: flex;
+                gap: 16px;
+                p{
+                    display: flex;
+                    flex-direction: column;
+                    width: 196px;
+                    gap: 8px;
+                    @include main.iconAndTitles;
+                    span{
+                        @include main.description2;
+                    }
+                }
+            }
+        }
+    }
+}
